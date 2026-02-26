@@ -74,6 +74,9 @@ const config: Config = {
         "body-sm": ["0.875rem", { lineHeight: "1.6" }],
         "body-xs": ["0.75rem", { lineHeight: "1.5" }],
       },
+      lineHeight: {
+        "tight-editorial": "0.85",
+      },
       letterSpacing: {
         "extra-wide": "0.15em",
         "luxury": "0.25em",
