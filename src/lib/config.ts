@@ -3,9 +3,9 @@ export const siteConfig = {
   tagline: "Independent Cosmetic Formulation Lab",
   description:
     "Strategic formulation audits and custom development across skincare, haircare, body care, and cosmetics.",
-  email: "hello@example.com",
+  email: "inquiries@cirechemistry.com",
   linkedin: "#", // TODO: Replace with your actual LinkedIn URL
-  formuley: "https://formuley.io",
+  formuley: "https://formuley.com",
   location: "Phoenix, AZ",
   calendlyUrl: "https://calendly.com/your-name/15-min-call",
   calendlyAuditUrl: "https://calendly.com/your-name/60-min-audit",

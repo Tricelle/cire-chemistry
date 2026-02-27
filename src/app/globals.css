@@ -42,31 +42,17 @@
     @apply max-w-6xl mx-auto;
   }
 
-  /* Scroll reveal — slower, more luxurious */
+  /* Scroll reveal — fade only for luxury restraint */
   .reveal {
     opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.6s ease-out;
   }
 
   .reveal.revealed {
     opacity: 1;
-    transform: translateY(0);
   }
 
-  /* Card hover — slower, subtler */
-  .card-hover {
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .card-hover:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
-  }
-
-  /* Animated underline — slower */
+  /* Animated underline — simplified */
   .link-underline {
     position: relative;
   }
@@ -79,7 +65,7 @@
     width: 0;
     height: 1px;
     background: #C4929B;
-    transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 0.3s ease;
   }
 
   .link-underline:hover::after {
@@ -98,61 +84,12 @@
     @apply w-12 h-px bg-rose mx-auto;
   }
 
-  /* Editorial Grid System */
-  .grid-editorial {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-  }
-
-  /* Offset Layouts for asymmetric design */
-  .offset-left {
-    transform: translateX(-5%);
-  }
-
-  .offset-right {
-    transform: translateX(5%);
-  }
-
-  /* Thin Accent Lines */
-  .accent-line {
-    width: 60px;
-    height: 2px;
-    background: #C4929B;
-  }
-
-  .accent-line-long {
-    width: 120px;
-    height: 2px;
-    background: #C4929B;
-  }
-
-  /* Large Editorial Numbers */
-  .editorial-number {
-    font-family: var(--font-cormorant);
-    font-size: 8rem;
-    line-height: 1;
-    font-weight: 300;
-    color: rgba(196, 146, 155, 0.15);
-  }
-
-  /* Clean Card (no gimmicks) */
+  /* Clean Card — single unified style */
   .card-clean {
     background: white;
     border: 1px solid #E0D8CE;
-    padding: 2.5rem;
-    transition: border-color 0.3s ease;
-  }
-
-  .card-clean:hover {
-    border-color: #C4929B;
-  }
-
-  /* Typography Emphasis */
-  .text-editorial-hero {
-    font-size: clamp(3rem, 8vw, 9rem);
-    line-height: 0.9;
-    letter-spacing: -0.02em;
+    padding: 3rem;
+    border-radius: 8px;
   }
 
   /* Photo Placeholder - Clean and minimal */
