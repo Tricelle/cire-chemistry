@@ -3,18 +3,12 @@ import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 export function About() {
   return (
     <section id="about" className="section-padding bg-white">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="grid md:grid-cols-[360px_1fr] gap-12">
-          {/* Photo Space */}
-          <RevealOnScroll>
-            <div className="photo-space w-full" />
-          </RevealOnScroll>
-
-          {/* Bio Content */}
-          <div className="space-y-6">
+      <div className="max-w-4xl mx-auto px-6 md:px-8">
+        {/* Bio Content - Single Column */}
+        <div className="space-y-6">
             <RevealOnScroll>
-              <div>
-                <h2 className="font-serif text-display-md text-charcoal mb-2">
+              <div className="text-center mb-8">
+                <h2 className="font-serif text-display-md text-charcoal mb-3">
                   Tricelle Gray
                 </h2>
                 <p className="text-body-md text-charcoal-light font-medium">
@@ -71,7 +65,6 @@ export function About() {
                 development through production.
               </p>
             </RevealOnScroll>
-          </div>
         </div>
       </div>
     </section>

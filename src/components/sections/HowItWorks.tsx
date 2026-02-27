@@ -87,30 +87,25 @@ export function HowItWorks() {
   const steps = activeTab === "audit" ? auditSteps : developmentSteps;
 
   return (
-    <section id="process" className="section-padding bg-white">
-      <div className="container-narrow">
+    <section id="process" className="section-padding bg-background">
+      <div className="max-w-4xl mx-auto px-6 md:px-8">
         <RevealOnScroll>
-          <p className="text-body-xs uppercase tracking-luxury text-rose mb-6 text-center">
-            Process
-          </p>
-          <h2 className="font-serif text-h1 md:text-display-md text-charcoal mb-6 text-center">
-            How It Works
-          </h2>
-          <div className="separator mb-6" />
-          <p className="text-body-lg text-charcoal-light text-center mb-14 max-w-lg mx-auto">
-            Two services, two clear paths. Select a service to see the process.
-          </p>
-        </RevealOnScroll>
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-display-md text-charcoal mb-6">
+              How It Works
+            </h2>
+            <p className="text-body-lg text-charcoal-light max-w-lg mx-auto mb-12">
+              Two services, two clear paths. Select a service to see the process.
+            </p>
 
-        <RevealOnScroll delay={100}>
-          <div className="flex justify-center mb-16">
-            <div className="inline-flex rounded-full border border-border bg-background p-1.5">
+            {/* Tab Switcher */}
+            <div className="inline-flex rounded-full border border-border bg-white p-1.5 shadow-sm">
               <button
                 onClick={() => setActiveTab("audit")}
                 className={cn(
-                  "rounded-full px-7 py-3 text-body-sm font-medium transition-all duration-500",
+                  "rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wide transition-all duration-300",
                   activeTab === "audit"
-                    ? "bg-rose text-white shadow-sm"
+                    ? "bg-rose text-white"
                     : "text-charcoal-light hover:text-charcoal"
                 )}
               >
@@ -119,9 +114,9 @@ export function HowItWorks() {
               <button
                 onClick={() => setActiveTab("development")}
                 className={cn(
-                  "rounded-full px-7 py-3 text-body-sm font-medium transition-all duration-500",
+                  "rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wide transition-all duration-300",
                   activeTab === "development"
-                    ? "bg-rose text-white shadow-sm"
+                    ? "bg-rose text-white"
                     : "text-charcoal-light hover:text-charcoal"
                 )}
               >
@@ -131,27 +126,34 @@ export function HowItWorks() {
           </div>
         </RevealOnScroll>
 
-        <div className="max-w-2xl mx-auto">
-          {steps.map((step, i) => (
-            <div key={`${activeTab}-${i}`} className="flex gap-7">
-              <div className="flex flex-col items-center">
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border-2 border-rose bg-white text-body-sm font-semibold text-rose">
-                  {i + 1}
-                </div>
-                {i < steps.length - 1 && (
-                  <div className="w-px flex-1 bg-border my-2" />
-                )}
-              </div>
+        {/* Steps - Creative Timeline */}
+        <div className="relative max-w-2xl mx-auto">
+          {/* Vertical line */}
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-rose/20 via-rose/40 to-rose/20" />
 
-              <div className={cn("pb-10", i === steps.length - 1 && "pb-0")}>
-                <h3 className="text-body-lg font-semibold text-charcoal mb-1.5">
-                  {step.title}
-                </h3>
-                <p className="text-body-md text-charcoal-light leading-relaxed">
-                  {step.description}
-                </p>
+          {steps.map((step, i) => (
+            <RevealOnScroll key={`${activeTab}-${i}`}>
+              <div className="relative flex gap-8 pb-12 last:pb-0">
+                {/* Number Circle */}
+                <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white border-2 border-rose shadow-sm">
+                  <span className="font-serif text-lg font-semibold text-rose">
+                    {i + 1}
+                  </span>
+                </div>
+
+                {/* Content Card */}
+                <div className="flex-1 pt-1">
+                  <div className="bg-white border border-border rounded-lg p-6 hover:border-rose/40 transition-colors duration-300">
+                    <h3 className="font-serif text-xl text-charcoal mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-body-md text-charcoal-light leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </RevealOnScroll>
           ))}
         </div>
       </div>
