@@ -7,7 +7,7 @@ export const siteConfig = {
   linkedin: "#", // TODO: Replace with your actual LinkedIn URL
   formuley: "https://formuley.com",
   location: "Phoenix, AZ",
-  calendlyUrl: "https://calendly.com/your-name/15-min-call",
-  calendlyAuditUrl: "https://calendly.com/your-name/60-min-audit",
+  calendlyUrl: "https://cal.com/cirechemistry/consultation",
+  calendlyAuditUrl: "https://cal.com/cirechemistry/formulation-audit",
   stripePaymentUrl: "https://buy.stripe.com/your-payment-link",
 };
