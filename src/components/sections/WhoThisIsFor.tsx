@@ -50,27 +50,29 @@ export function WhoThisIsFor() {
         <div className="max-w-3xl mx-auto space-y-16 mb-16">
           {/* Problems Section */}
           <RevealOnScroll>
-            <div className="space-y-8">
-              <h3 className="font-serif text-2xl text-charcoal text-center">
+            <div className="space-y-8 text-center">
+              <h3 className="font-serif text-2xl text-charcoal">
                 Maybe you need help with:
               </h3>
-              <div className="space-y-3 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-4 md:space-y-0 text-body-md text-charcoal-light max-w-2xl mx-auto">
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                  <span>Texture that's off</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                  <span>Stability that concerns you</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                  <span>Cost that doesn't add up</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                  <span>Starting from scratch</span>
-                </p>
+              <div className="inline-block text-left">
+                <div className="space-y-3 md:grid md:grid-cols-2 md:gap-x-16 md:gap-y-4 md:space-y-0 text-body-md text-charcoal-light">
+                  <p className="flex items-start gap-3">
+                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                    <span>Texture that's off</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                    <span>Stability that concerns you</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                    <span>Cost that doesn't add up</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                    <span>Starting from scratch</span>
+                  </p>
+                </div>
               </div>
             </div>
           </RevealOnScroll>
@@ -80,20 +82,22 @@ export function WhoThisIsFor() {
 
           {/* Client Types Section */}
           <RevealOnScroll>
-            <div className="space-y-8">
-              <h3 className="font-serif text-2xl text-charcoal text-center">
+            <div className="space-y-8 text-center">
+              <h3 className="font-serif text-2xl text-charcoal">
                 I work with:
               </h3>
-              <ul className="space-y-4 max-w-2xl mx-auto">
-                {clientTypes.map((type) => (
-                  <li key={type} className="flex items-start gap-3">
-                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                    <span className="text-body-md text-charcoal-light">
-                      {type}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <div className="inline-block text-left">
+                <ul className="space-y-4">
+                  {clientTypes.map((type) => (
+                    <li key={type} className="flex items-start gap-3">
+                      <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                      <span className="text-body-md text-charcoal-light">
+                        {type}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </RevealOnScroll>
         </div>
