@@ -49,10 +49,10 @@ export function About() {
               <p className="text-body-lg text-charcoal-light leading-relaxed max-w-2xl">
                 As the founder of{" "}
                 <a
-                  href="https://formuley.io"
+                  href="https://formuley.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link-underline text-rose-dark font-semibold transition-colors duration-500 hover:text-rose"
+                  className="link-underline font-semibold transition-colors duration-500 text-[#8B5CF6] hover:text-[#7C3AED]"
                 >
                   Formuley
                 </a>
