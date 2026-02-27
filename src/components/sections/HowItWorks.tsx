@@ -87,26 +87,27 @@ export function HowItWorks() {
   const steps = activeTab === "audit" ? auditSteps : developmentSteps;
 
   return (
-    <section id="process" className="section-padding bg-white">
-      <div className="max-w-4xl mx-auto px-6 md:px-8">
+    <section id="process" className="section-padding bg-cream-50">
+      <div className="max-w-5xl mx-auto px-6 md:px-8">
         <RevealOnScroll>
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-display-md text-charcoal mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="font-serif text-display-md text-charcoal mb-4">
               How It Works
             </h2>
-            <p className="text-body-lg text-charcoal-light max-w-lg mx-auto mb-12">
+            <div className="separator mb-6" />
+            <p className="text-body-lg text-charcoal-light max-w-2xl mx-auto mb-8 md:mb-12">
               Two services, two clear paths. Select a service to see the process.
             </p>
 
-            {/* Tab Switcher - Clean Minimal */}
-            <div className="inline-flex gap-2 border-b border-border">
+            {/* Tab Switcher - Responsive Cards */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-2xl mx-auto">
               <button
                 onClick={() => setActiveTab("audit")}
                 className={cn(
-                  "px-6 py-3 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-b-2",
+                  "flex-1 px-6 py-4 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-2 rounded-lg",
                   activeTab === "audit"
-                    ? "border-rose text-charcoal"
-                    : "border-transparent text-charcoal-light hover:text-charcoal"
+                    ? "border-rose bg-rose/5 text-charcoal"
+                    : "border-border bg-white text-charcoal-light hover:border-rose/40 hover:text-charcoal"
                 )}
               >
                 Formulation Audit
@@ -114,10 +115,10 @@ export function HowItWorks() {
               <button
                 onClick={() => setActiveTab("development")}
                 className={cn(
-                  "px-6 py-3 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-b-2",
+                  "flex-1 px-6 py-4 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-2 rounded-lg",
                   activeTab === "development"
-                    ? "border-rose text-charcoal"
-                    : "border-transparent text-charcoal-light hover:text-charcoal"
+                    ? "border-rose bg-rose/5 text-charcoal"
+                    : "border-border bg-white text-charcoal-light hover:border-rose/40 hover:text-charcoal"
                 )}
               >
                 Custom Development
@@ -126,22 +127,31 @@ export function HowItWorks() {
           </div>
         </RevealOnScroll>
 
-        {/* Steps - Clean Minimal List */}
-        <div className="space-y-8 max-w-2xl mx-auto">
+        {/* Steps - Enhanced Cards */}
+        <div className="grid gap-6 md:gap-8 max-w-3xl mx-auto">
           {steps.map((step, i) => (
             <RevealOnScroll key={`${activeTab}-${i}`}>
-              <div className="border-l-2 border-rose/20 pl-6 py-2">
-                <div className="flex items-baseline gap-3 mb-2">
-                  <span className="text-sm font-medium text-rose uppercase tracking-wider">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <h3 className="font-serif text-xl text-charcoal">
-                    {step.title}
-                  </h3>
+              <div className="bg-white border border-border rounded-lg p-6 md:p-8 transition-all duration-300 hover:border-rose/40 hover:shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  {/* Number Badge */}
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-rose/10 flex items-center justify-center">
+                      <span className="text-lg font-medium text-rose">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 space-y-2">
+                    <h3 className="font-serif text-xl md:text-2xl text-charcoal">
+                      {step.title}
+                    </h3>
+                    <p className="text-body-md text-charcoal-light leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
-                <p className="text-body-md text-charcoal-light leading-relaxed">
-                  {step.description}
-                </p>
               </div>
             </RevealOnScroll>
           ))}
