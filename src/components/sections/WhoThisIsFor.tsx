@@ -23,13 +23,13 @@ export function WhoThisIsFor() {
           {/* Animated Tagline - Larger & More Prominent */}
           <div className="overflow-hidden my-16">
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3">
-              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.2s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal">
+              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.2s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-rose">
                 I build.
               </span>
-              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.5s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal">
+              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.5s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-rose">
                 I formulate.
               </span>
-              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.8s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal">
+              <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.8s_forwards] text-4xl md:text-5xl lg:text-6xl font-serif text-rose">
                 I solve.
               </span>
             </div>
@@ -46,30 +46,45 @@ export function WhoThisIsFor() {
           </RevealOnScroll>
         </div>
 
-        {/* Two Column Layout */}
-        <div className="grid md:grid-cols-2 gap-16 mb-16">
-          {/* Left: Problems */}
+        {/* Centered Single Column */}
+        <div className="max-w-3xl mx-auto space-y-16 mb-16">
+          {/* Problems Section */}
           <RevealOnScroll>
-            <div className="space-y-6">
+            <div className="text-center space-y-8">
               <h3 className="font-serif text-2xl text-charcoal">
                 Maybe you need help with:
               </h3>
-              <div className="space-y-3 text-body-md text-charcoal-light leading-relaxed">
-                <p>Texture that's off.</p>
-                <p>Stability that concerns you.</p>
-                <p>Cost that doesn't add up.</p>
-                <p>Or starting from scratch and need a formulator who can take your vision from concept to production.</p>
+              <div className="grid md:grid-cols-2 gap-x-12 gap-y-4 text-body-md text-charcoal-light text-left">
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                  <span>Texture that's off</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                  <span>Stability that concerns you</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                  <span>Cost that doesn't add up</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                  <span>Starting from scratch</span>
+                </p>
               </div>
             </div>
           </RevealOnScroll>
 
-          {/* Right: Client Types */}
+          {/* Separator */}
+          <div className="separator" />
+
+          {/* Client Types Section */}
           <RevealOnScroll>
-            <div className="space-y-6">
+            <div className="text-center space-y-8">
               <h3 className="font-serif text-2xl text-charcoal">
                 I work with:
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-4 text-left">
                 {clientTypes.map((type) => (
                   <li key={type} className="flex items-start gap-3">
                     <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
