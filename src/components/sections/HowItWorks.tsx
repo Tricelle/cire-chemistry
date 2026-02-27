@@ -87,7 +87,7 @@ export function HowItWorks() {
   const steps = activeTab === "audit" ? auditSteps : developmentSteps;
 
   return (
-    <section id="process" className="section-padding bg-background">
+    <section id="process" className="section-padding bg-white">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <RevealOnScroll>
           <div className="text-center mb-16">
@@ -98,15 +98,15 @@ export function HowItWorks() {
               Two services, two clear paths. Select a service to see the process.
             </p>
 
-            {/* Tab Switcher */}
-            <div className="inline-flex rounded-full border border-border bg-white p-1.5 shadow-sm">
+            {/* Tab Switcher - Clean Minimal */}
+            <div className="inline-flex gap-2 border-b border-border">
               <button
                 onClick={() => setActiveTab("audit")}
                 className={cn(
-                  "rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wide transition-all duration-300",
+                  "px-6 py-3 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-b-2",
                   activeTab === "audit"
-                    ? "bg-rose text-white"
-                    : "text-charcoal-light hover:text-charcoal"
+                    ? "border-rose text-charcoal"
+                    : "border-transparent text-charcoal-light hover:text-charcoal"
                 )}
               >
                 Formulation Audit
@@ -114,10 +114,10 @@ export function HowItWorks() {
               <button
                 onClick={() => setActiveTab("development")}
                 className={cn(
-                  "rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wide transition-all duration-300",
+                  "px-6 py-3 text-sm font-medium uppercase tracking-wide transition-all duration-300 border-b-2",
                   activeTab === "development"
-                    ? "bg-rose text-white"
-                    : "text-charcoal-light hover:text-charcoal"
+                    ? "border-rose text-charcoal"
+                    : "border-transparent text-charcoal-light hover:text-charcoal"
                 )}
               >
                 Custom Development
@@ -126,32 +126,22 @@ export function HowItWorks() {
           </div>
         </RevealOnScroll>
 
-        {/* Steps - Creative Timeline */}
-        <div className="relative max-w-2xl mx-auto">
-          {/* Vertical line */}
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-rose/20 via-rose/40 to-rose/20" />
-
+        {/* Steps - Clean Minimal List */}
+        <div className="space-y-8 max-w-2xl mx-auto">
           {steps.map((step, i) => (
             <RevealOnScroll key={`${activeTab}-${i}`}>
-              <div className="relative flex gap-8 pb-12 last:pb-0">
-                {/* Number Circle */}
-                <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white border-2 border-rose shadow-sm">
-                  <span className="font-serif text-lg font-semibold text-rose">
-                    {i + 1}
+              <div className="border-l-2 border-rose/20 pl-6 py-2">
+                <div className="flex items-baseline gap-3 mb-2">
+                  <span className="text-sm font-medium text-rose uppercase tracking-wider">
+                    {String(i + 1).padStart(2, '0')}
                   </span>
+                  <h3 className="font-serif text-xl text-charcoal">
+                    {step.title}
+                  </h3>
                 </div>
-
-                {/* Content Card */}
-                <div className="flex-1 pt-1">
-                  <div className="bg-white border border-border rounded-lg p-6 hover:border-rose/40 transition-colors duration-300">
-                    <h3 className="font-serif text-xl text-charcoal mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-body-md text-charcoal-light leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
+                <p className="text-body-md text-charcoal-light leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             </RevealOnScroll>
           ))}
