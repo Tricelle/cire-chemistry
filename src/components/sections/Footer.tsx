@@ -12,7 +12,7 @@ export function Footer() {
           <span className="font-serif text-2xl tracking-wide text-cream-100 block mb-3">
             {siteConfig.name}
           </span>
-          <p className="text-body-sm text-cream-200/60 tracking-wide">
+          <p className="text-body-md text-cream-200/60 tracking-wide">
             {siteConfig.tagline}
           </p>
         </div>
@@ -21,7 +21,7 @@ export function Footer() {
         <div className="flex flex-wrap justify-center gap-8 mb-14">
           <a
             href={`mailto:${siteConfig.email}`}
-            className="group inline-flex items-center gap-1.5 text-body-sm text-cream-200/70 hover:text-rose transition-colors duration-500"
+            className="group inline-flex items-center gap-1.5 text-body-md text-cream-200/70 hover:text-rose transition-colors duration-500"
           >
             {siteConfig.email}
             <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -30,7 +30,7 @@ export function Footer() {
             href={siteConfig.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-1.5 text-body-sm text-cream-200/70 hover:text-rose transition-colors duration-500"
+            className="group inline-flex items-center gap-1.5 text-body-md text-cream-200/70 hover:text-rose transition-colors duration-500"
           >
             LinkedIn
             <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -39,14 +39,14 @@ export function Footer() {
             href={siteConfig.formuley}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-1.5 text-body-sm text-cream-200/70 hover:text-rose transition-colors duration-500"
+            className="group inline-flex items-center gap-1.5 text-body-md text-cream-200/70 hover:text-rose transition-colors duration-500"
           >
             Formuley
             <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </a>
           <a
             href="/faq"
-            className="group inline-flex items-center gap-1.5 text-body-sm text-cream-200/70 hover:text-rose transition-colors duration-500"
+            className="group inline-flex items-center gap-1.5 text-body-md text-cream-200/70 hover:text-rose transition-colors duration-500"
           >
             FAQ
             <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -57,7 +57,7 @@ export function Footer() {
         <div className="w-12 h-px bg-cream-200/20 mx-auto mb-10" />
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-body-xs text-cream-200/40">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-body-md text-cream-200/40">
           <p>
             Based in {siteConfig.location}. Serving brands nationwide.
           </p>

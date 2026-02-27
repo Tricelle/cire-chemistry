@@ -50,25 +50,25 @@ export function WhoThisIsFor() {
         <div className="max-w-3xl mx-auto space-y-16 mb-16">
           {/* Problems Section */}
           <RevealOnScroll>
-            <div className="text-center space-y-8">
-              <h3 className="font-serif text-2xl text-charcoal">
+            <div className="space-y-8">
+              <h3 className="font-serif text-2xl text-charcoal text-center">
                 Maybe you need help with:
               </h3>
-              <div className="grid md:grid-cols-2 gap-x-12 gap-y-4 text-body-md text-charcoal-light text-left">
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+              <div className="grid md:grid-cols-2 gap-6 text-body-md text-charcoal-light mx-auto max-w-2xl">
+                <p className="flex items-center gap-3 justify-center md:justify-start">
+                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Texture that's off</span>
                 </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-center gap-3 justify-center md:justify-start">
+                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Stability that concerns you</span>
                 </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-center gap-3 justify-center md:justify-start">
+                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Cost that doesn't add up</span>
                 </p>
-                <p className="flex items-start gap-3">
-                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-center gap-3 justify-center md:justify-start">
+                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Starting from scratch</span>
                 </p>
               </div>
@@ -80,15 +80,15 @@ export function WhoThisIsFor() {
 
           {/* Client Types Section */}
           <RevealOnScroll>
-            <div className="text-center space-y-8">
-              <h3 className="font-serif text-2xl text-charcoal">
+            <div className="space-y-8">
+              <h3 className="font-serif text-2xl text-charcoal text-center">
                 I work with:
               </h3>
-              <ul className="space-y-4 text-left">
+              <ul className="space-y-4 mx-auto max-w-2xl">
                 {clientTypes.map((type) => (
-                  <li key={type} className="flex items-start gap-3">
+                  <li key={type} className="flex items-start gap-3 justify-center">
                     <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                    <span className="text-body-md text-charcoal-light">
+                    <span className="text-body-md text-charcoal-light text-center md:text-left flex-1 max-w-xl">
                       {type}
                     </span>
                   </li>

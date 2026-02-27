@@ -84,14 +84,11 @@ export function InquiryForm() {
       <div className="container-narrow">
         <div className="max-w-xl mx-auto">
           <RevealOnScroll>
-            <p className="text-body-xs uppercase tracking-luxury text-rose mb-6 text-center">
-              Inquire
-            </p>
-            <h2 className="font-serif text-h1 md:text-display-md text-charcoal mb-6 text-center">
+            <h2 className="font-serif text-display-md text-charcoal mb-6 text-center">
               Ready to Get Started?
             </h2>
-            <div className="separator mb-6" />
-            <p className="text-body-lg text-charcoal-light mb-12 text-center">
+            <div className="separator mb-8" />
+            <p className="text-body-lg text-charcoal-light mb-12 text-center max-w-2xl mx-auto">
               Fill out the form below and I'll be in touch within 48 hours.
             </p>
           </RevealOnScroll>
@@ -99,7 +96,7 @@ export function InquiryForm() {
           <RevealOnScroll delay={100}>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="space-y-7 bg-white rounded-2xl p-8 md:p-12 border border-border/50"
+              className="space-y-7 bg-white rounded-lg p-12 border border-border"
             >
               {/* Honeypot */}
               <div className="sr-only" aria-hidden="true">
@@ -209,7 +206,7 @@ export function InquiryForm() {
                 )}
               </Button>
 
-              <p className="text-body-sm text-charcoal-light/50 text-center">
+              <p className="text-body-md text-charcoal-light/50 text-center">
                 I review all inquiries within 48 hours.
               </p>
             </form>
