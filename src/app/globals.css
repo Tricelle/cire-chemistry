@@ -8,7 +8,7 @@
     --foreground: #3E2723;
     --border: #E0D8CE;
     --input: #E0D8CE;
-    --ring: #C9A195;
+    --ring: #f4c9d6;
   }
 
   html {
@@ -24,7 +24,7 @@
   }
 
   ::selection {
-    background-color: rgba(201, 161, 149, 0.25);
+    background-color: rgba(244, 201, 214, 0.25);
     color: #3E2723;
   }
 }
@@ -78,7 +78,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: #C9A195;
+    background: #f4c9d6;
     transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
@@ -118,13 +118,13 @@
   .accent-line {
     width: 60px;
     height: 2px;
-    background: #C9A195;
+    background: #f4c9d6;
   }
 
   .accent-line-long {
     width: 120px;
     height: 2px;
-    background: #C9A195;
+    background: #f4c9d6;
   }
 
   /* Large Editorial Numbers */
@@ -133,7 +133,7 @@
     font-size: 8rem;
     line-height: 1;
     font-weight: 300;
-    color: rgba(201, 161, 149, 0.15);
+    color: rgba(244, 201, 214, 0.15);
   }
 
   /* Clean Card (no gimmicks) */
@@ -145,7 +145,7 @@
   }
 
   .card-clean:hover {
-    border-color: #C9A195;
+    border-color: #f4c9d6;
   }
 
   /* Typography Emphasis */

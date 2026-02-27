@@ -22,12 +22,12 @@ const config: Config = {
           dark: "#2A1B17",
         },
         rose: {
-          DEFAULT: "#C9A195",
-          light: "#D9B5AA",
-          dark: "#A8826F",
-          50: "#FAF7F5",
-          100: "#F3EBE7",
-          200: "#E8D7CF",
+          DEFAULT: "#f4c9d6",
+          light: "#f8dde6",
+          dark: "#e5a8bb",
+          50: "#fef7f9",
+          100: "#fceef2",
+          200: "#f9dee5",
         },
         border: "var(--border)",
         input: "var(--input)",
@@ -86,7 +86,7 @@ const config: Config = {
         md: "0 4px 12px -2px rgb(0 0 0 / 0.06)",
         lg: "0 12px 24px -4px rgb(0 0 0 / 0.07)",
         xl: "0 24px 48px -8px rgb(0 0 0 / 0.08)",
-        glow: "0 0 40px rgba(201, 161, 149, 0.15)",
+        glow: "0 0 40px rgba(244, 201, 214, 0.15)",
       },
       keyframes: {
         "fade-in": {
