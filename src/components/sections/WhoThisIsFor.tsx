@@ -54,21 +54,21 @@ export function WhoThisIsFor() {
               <h3 className="font-serif text-2xl text-charcoal text-center">
                 Maybe you need help with:
               </h3>
-              <div className="grid md:grid-cols-2 gap-6 text-body-md text-charcoal-light mx-auto max-w-2xl">
-                <p className="flex items-center gap-3 justify-center md:justify-start">
-                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
+              <div className="space-y-3 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-4 md:space-y-0 text-body-md text-charcoal-light max-w-2xl mx-auto">
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Texture that's off</span>
                 </p>
-                <p className="flex items-center gap-3 justify-center md:justify-start">
-                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Stability that concerns you</span>
                 </p>
-                <p className="flex items-center gap-3 justify-center md:justify-start">
-                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Cost that doesn't add up</span>
                 </p>
-                <p className="flex items-center gap-3 justify-center md:justify-start">
-                  <span className="block h-1 w-1 flex-shrink-0 bg-rose" />
+                <p className="flex items-start gap-3">
+                  <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
                   <span>Starting from scratch</span>
                 </p>
               </div>
@@ -84,11 +84,11 @@ export function WhoThisIsFor() {
               <h3 className="font-serif text-2xl text-charcoal text-center">
                 I work with:
               </h3>
-              <ul className="space-y-4 mx-auto max-w-2xl">
+              <ul className="space-y-4 max-w-2xl mx-auto">
                 {clientTypes.map((type) => (
-                  <li key={type} className="flex items-start gap-3 justify-center">
+                  <li key={type} className="flex items-start gap-3">
                     <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                    <span className="text-body-md text-charcoal-light text-center md:text-left flex-1 max-w-xl">
+                    <span className="text-body-md text-charcoal-light">
                       {type}
                     </span>
                   </li>
