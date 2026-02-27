@@ -65,7 +65,7 @@ export function InquiryForm() {
             <div className="w-20 h-20 rounded-full bg-rose-50 mx-auto mb-8 flex items-center justify-center">
               <CheckCircle className="h-10 w-10 text-rose" />
             </div>
-            <h2 className="font-serif text-h1 text-charcoal mb-4">
+            <h2 className="text-h1 font-semibold text-charcoal mb-4">
               Inquiry Received
             </h2>
             <p className="text-body-lg text-charcoal-light leading-relaxed">
@@ -84,7 +84,7 @@ export function InquiryForm() {
       <div className="container-narrow">
         <div className="max-w-xl mx-auto">
           <RevealOnScroll>
-            <h2 className="font-serif text-display-md text-charcoal mb-6 text-center">
+            <h2 className="text-display-md font-semibold text-charcoal mb-6 text-center">
               Ready to Get Started?
             </h2>
             <div className="separator mb-8" />

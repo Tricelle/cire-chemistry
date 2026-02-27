@@ -19,45 +19,53 @@ const developmentIncludes = [
 export function Services() {
   return (
     <section id="services" className="section-padding bg-cream-50">
-      <div className="max-w-4xl mx-auto px-6 md:px-8">
-        {/* Section Header - Centered */}
+      <div className="max-w-6xl mx-auto px-6 md:px-8">
+        {/* Section Header */}
         <RevealOnScroll>
-          <h2 className="font-serif text-display-md text-charcoal text-center mb-16">
+          <h2 className="text-4xl md:text-display-md font-semibold text-charcoal text-center mb-12 md:mb-16">
             Services
           </h2>
         </RevealOnScroll>
 
-        {/* Centered Card Stack */}
-        <div className="space-y-12">
+        {/* Two Column Grid */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           {/* Service 1: Formulation Audit */}
           <RevealOnScroll>
-            <div className="card-clean">
-              <h3 className="font-serif text-3xl md:text-4xl text-charcoal mb-2">
-                Formulation Audit & Strategic Review
-              </h3>
-              <p className="text-body-md text-rose-dark mb-6 font-medium">$425</p>
+            <div className="bg-white border border-cream-200 rounded-lg p-8 md:p-10 lg:p-12 h-full flex flex-col">
+              {/* Header */}
+              <div className="mb-8">
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal leading-tight mb-3">
+                  Formulation Audit & Strategic Review
+                </h3>
+                <p className="text-lg text-rose-dark font-medium">$425</p>
+              </div>
 
-              <p className="text-body-lg text-charcoal-light mb-8 leading-relaxed">
+              {/* Description */}
+              <p className="text-base md:text-body-lg text-charcoal-light mb-10 leading-relaxed">
                 A professional deep-dive analysis of your existing formula. You
                 submit your ingredients, percentages, and problem areas. I review
                 everything in depth before our session, then walk you through
                 what's working, what's risky, and what needs to change.
               </p>
 
-              <p className="text-body-sm font-semibold text-charcoal mb-4 uppercase tracking-wide">
-                What's included:
-              </p>
-              <ul className="space-y-2 mb-8">
-                {auditIncludes.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                    <span className="text-body-md text-charcoal-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              {/* Includes */}
+              <div className="mb-10">
+                <p className="text-xs font-semibold text-charcoal mb-5 uppercase tracking-luxury">
+                  What's included:
+                </p>
+                <ul className="space-y-4">
+                  {auditIncludes.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-2 block h-1.5 w-1.5 flex-shrink-0 bg-rose rounded-full" />
+                      <span className="text-sm md:text-base text-charcoal-light leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <div className="border-l-2 border-rose pl-6 py-4 bg-cream-50">
-                <p className="text-body-sm text-charcoal-light leading-relaxed">
+              {/* Disclaimer */}
+              <div className="mt-auto border-l-2 border-rose pl-5 py-4 bg-cream-50 rounded-r">
+                <p className="text-sm text-charcoal-light leading-relaxed">
                   This service provides expert analysis and strategic direction.
                   It does not include reformulation, corrected formula documents,
                   or manufacturer-ready documentation. Full reformulation is
@@ -69,44 +77,52 @@ export function Services() {
 
           {/* Service 2: Custom Formulation Development */}
           <RevealOnScroll>
-            <div className="card-clean">
-              <h3 className="font-serif text-3xl md:text-4xl text-charcoal mb-2">
-                Custom Formulation Development
-              </h3>
-              <p className="text-body-sm text-rose-dark mb-6 tracking-wide uppercase font-medium">
-                Currently Booking Fall 2026
-              </p>
+            <div className="bg-white border border-cream-200 rounded-lg p-8 md:p-10 lg:p-12 h-full flex flex-col">
+              {/* Header */}
+              <div className="mb-8">
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal leading-tight mb-3">
+                  Custom Formulation Development
+                </h3>
+                <p className="text-xs text-rose-dark tracking-luxury uppercase font-medium">
+                  Currently Booking Fall 2026
+                </p>
+              </div>
 
-              <p className="text-body-lg text-charcoal-light mb-8 leading-relaxed">
+              {/* Description */}
+              <p className="text-base md:text-body-lg text-charcoal-light mb-10 leading-relaxed">
                 Complete formula development from concept to manufacturer-ready
                 documentation. I develop your product with full ingredient
                 specifications, processing instructions, safety and stability
                 documentation, and everything your manufacturer needs to produce.
               </p>
 
-              <p className="text-body-sm font-semibold text-charcoal mb-4 uppercase tracking-wide">
-                What's included:
-              </p>
-              <ul className="space-y-2 mb-10">
-                {developmentIncludes.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 block h-1 w-1 flex-shrink-0 bg-rose" />
-                    <span className="text-body-md text-charcoal-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              {/* Includes */}
+              <div className="mb-10">
+                <p className="text-xs font-semibold text-charcoal mb-5 uppercase tracking-luxury">
+                  What's included:
+                </p>
+                <ul className="space-y-4">
+                  {developmentIncludes.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-2 block h-1.5 w-1.5 flex-shrink-0 bg-rose rounded-full" />
+                      <span className="text-sm md:text-base text-charcoal-light leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <div>
+              {/* Footer */}
+              <div className="mt-auto border-l-2 border-rose pl-5 py-4 bg-cream-50 rounded-r">
+                <p className="text-sm text-charcoal-light leading-relaxed mb-3">
+                  Currently booking for Fall 2026 projects. Submit an inquiry to discuss
+                  your timeline and product vision.
+                </p>
                 <a
                   href="#inquiry"
-                  className="inline-flex items-center gap-3 bg-rose text-white px-8 py-4 border-2 border-rose transition-all duration-300 hover:bg-background hover:text-rose group"
+                  className="text-sm text-charcoal font-medium hover:text-rose transition-colors duration-300 inline-flex items-center gap-1.5 group"
                 >
-                  <span className="text-sm font-medium tracking-wide uppercase">
-                    Join the Waitlist
-                  </span>
-                  <span className="group-hover:translate-x-1 transition-transform">
-                    →
-                  </span>
+                  Submit inquiry below
+                  <span className="group-hover:translate-x-0.5 transition-transform text-rose">→</span>
                 </a>
               </div>
             </div>
@@ -114,7 +130,7 @@ export function Services() {
         </div>
 
         <RevealOnScroll>
-          <p className="text-body-sm text-charcoal-light mt-16 text-center">
+          <p className="text-sm text-charcoal-light mt-12 md:mt-16 text-center">
             Have questions?{" "}
             <a
               href="/faq"

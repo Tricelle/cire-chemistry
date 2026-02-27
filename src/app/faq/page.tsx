@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "When are you booking for Custom Formulation Development?",
     answer:
-      "I'm currently booking for Fall 2026. Submit an inquiry to join the waitlist and I'll reach out when spots open.",
+      "I'm currently planning my November 2026 project schedule. Submit an inquiry to discuss your timeline and product vision, and I'll review it within 48 hours.",
   },
   {
     question: "How should I prepare for my audit session?",
@@ -86,7 +86,7 @@ export default function FAQPage() {
           <p className="text-body-xs uppercase tracking-luxury text-rose mb-6">
             FAQ
           </p>
-          <h1 className="font-serif text-h1 md:text-display-md text-charcoal mb-4">
+          <h1 className="text-h1 md:text-display-md font-semibold text-charcoal mb-4">
             Frequently Asked Questions
           </h1>
           <p className="text-body-lg text-charcoal-light mb-16 max-w-2xl">
@@ -99,10 +99,10 @@ export default function FAQPage() {
                 key={i}
                 className="border-b border-border pb-10 last:border-0"
               >
-                <h2 className="font-serif text-h3 text-charcoal mb-4">
+                <h2 className="text-xl md:text-2xl font-semibold text-charcoal mb-3">
                   {faq.question}
                 </h2>
-                <p className="text-body-md text-charcoal-light leading-relaxed">
+                <p className="text-sm md:text-base text-charcoal-light/80 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

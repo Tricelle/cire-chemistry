@@ -15,7 +15,7 @@ export function WhoThisIsFor() {
         {/* Hero Statement */}
         <div className="text-center mb-20">
           <RevealOnScroll>
-            <h2 className="font-serif text-display-md text-charcoal mb-4">
+            <h2 className="text-display-md font-semibold text-charcoal mb-4">
               You are in the right place.
             </h2>
           </RevealOnScroll>
@@ -51,7 +51,7 @@ export function WhoThisIsFor() {
           {/* Problems Section */}
           <RevealOnScroll>
             <div className="space-y-8 text-center">
-              <h3 className="font-serif text-2xl text-charcoal">
+              <h3 className="text-2xl font-semibold text-charcoal">
                 Maybe you need help with:
               </h3>
               <div className="inline-block text-left">
@@ -83,7 +83,7 @@ export function WhoThisIsFor() {
           {/* Client Types Section */}
           <RevealOnScroll>
             <div className="space-y-8 text-center">
-              <h3 className="font-serif text-2xl text-charcoal">
+              <h3 className="text-2xl font-semibold text-charcoal">
                 I work with:
               </h3>
               <div className="inline-block text-left">

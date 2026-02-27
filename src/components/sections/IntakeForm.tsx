@@ -77,7 +77,7 @@ export function IntakeForm() {
     return (
       <div className="max-w-xl mx-auto text-center py-12">
         <CheckCircle className="h-16 w-16 text-rose mx-auto mb-6" />
-        <h2 className="font-serif text-h2 text-charcoal mb-4">
+        <h2 className="text-h2 font-semibold text-charcoal mb-4">
           Intake Form Received
         </h2>
         <p className="text-body-lg text-charcoal-light">

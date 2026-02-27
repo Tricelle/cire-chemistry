@@ -7,10 +7,12 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { About } from "@/components/sections/About";
 import { InquiryForm } from "@/components/sections/InquiryForm";
 import { Footer } from "@/components/sections/Footer";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export default function Home() {
   return (
     <>
+      <LoadingScreen />
       <Header />
       <main>
         <Hero />

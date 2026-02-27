@@ -203,7 +203,7 @@ export async function POST(request: Request) {
                             <tr>
                               <td style="padding: 24px 40px; background-color: #F5F0E6; text-align: center; font-size: 13px; color: #8B7355;">
                                 <p style="margin: 0;">Phoenix, AZ • Serving brands nationwide</p>
-                                <p style="margin: 8px 0 0 0;">${siteConfig.email}</p>
+                                <p style="margin: 8px 0 0 0;"><a href="mailto:${siteConfig.email}" style="color: #8B7355; text-decoration: none;">${siteConfig.email}</a></p>
                               </td>
                             </tr>
                           </table>

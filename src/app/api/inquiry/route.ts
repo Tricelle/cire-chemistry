@@ -55,7 +55,7 @@ function getAutoReplyHtml(name: string, hasFormula: "Yes" | "No"): string {
                   <tr>
                     <td style="padding: 24px 40px; background-color: #F5F0E6; text-align: center; font-size: 13px; color: #8B7355;">
                       <p style="margin: 0;">Phoenix, AZ • Serving brands nationwide</p>
-                      <p style="margin: 8px 0 0 0;">${siteConfig.email}</p>
+                      <p style="margin: 8px 0 0 0;"><a href="mailto:${siteConfig.email}" style="color: #8B7355; text-decoration: none;">${siteConfig.email}</a></p>
                     </td>
                   </tr>
                 </table>
@@ -95,7 +95,7 @@ function getAutoReplyHtml(name: string, hasFormula: "Yes" | "No"): string {
                   <td style="padding: 32px 40px 40px 40px; color: #3E2723; font-size: 16px; line-height: 1.7;">
                     <p style="margin: 0 0 20px 0;">Hi ${name},</p>
                     <p style="margin: 0 0 20px 0;">Thanks for reaching out. Based on where you are, <strong>Custom Formulation Development</strong> would be the best fit.</p>
-                    <p style="margin: 0 0 20px 0;">I'm currently booking for <strong>Fall 2026</strong>. Reply to this email to be added to the waitlist.</p>
+                    <p style="margin: 0 0 20px 0;">Thank you for your interest in working together. I'm currently planning my <strong>November 2026</strong> project schedule. I'll review your inquiry within 48 hours and reach out if it's a strong fit.</p>
                     <p style="margin: 0;">
                       Looking forward to working with you,<br />
                       <span style="font-weight: 500;">${siteConfig.name}</span>

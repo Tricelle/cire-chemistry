@@ -8,7 +8,7 @@ export function About() {
         <div className="space-y-6">
             <RevealOnScroll>
               <div className="text-center mb-8">
-                <h2 className="font-serif text-display-md text-charcoal mb-3">
+                <h2 className="font-serif text-display-md text-charcoal-light mb-3">
                   Tricelle Gray
                 </h2>
                 <p className="text-body-md text-charcoal-light font-medium">

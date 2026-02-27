@@ -91,7 +91,7 @@ export function HowItWorks() {
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         <RevealOnScroll>
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="font-serif text-display-md text-charcoal mb-4">
+            <h2 className="text-display-md font-semibold text-charcoal mb-4">
               How It Works
             </h2>
             <div className="separator mb-6" />
@@ -144,7 +144,7 @@ export function HowItWorks() {
 
                   {/* Content */}
                   <div className="flex-1 space-y-2">
-                    <h3 className="font-serif text-xl md:text-2xl text-charcoal">
+                    <h3 className="text-xl md:text-2xl font-semibold text-charcoal">
                       {step.title}
                     </h3>
                     <p className="text-body-md text-charcoal-light leading-relaxed">

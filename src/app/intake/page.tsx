@@ -25,7 +25,7 @@ export default function IntakePage() {
       {/* Form */}
       <div className="section-padding">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-serif text-h1 md:text-display-md text-charcoal mb-4">
+          <h1 className="text-h1 md:text-display-md font-semibold text-charcoal mb-4">
             Formula Intake Questionnaire
           </h1>
           <p className="text-body-lg text-charcoal-light mb-10">

@@ -8,7 +8,7 @@ export function Overview() {
           <p className="text-body-xs uppercase tracking-luxury text-rose mb-6">
             Overview
           </p>
-          <h2 className="font-serif text-h1 md:text-display-md text-charcoal mb-6">
+          <h2 className="text-h1 md:text-display-md font-semibold text-charcoal mb-6">
             Precision Formulation, End to End
           </h2>
           <div className="separator mb-10" />

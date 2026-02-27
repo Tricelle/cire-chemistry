@@ -43,7 +43,7 @@ export default function BookPage() {
           <p className="text-body-xs uppercase tracking-luxury text-rose mb-6">
             Formulation Audit
           </p>
-          <h1 className="font-serif text-h1 md:text-display-md text-charcoal mb-4">
+          <h1 className="text-h1 md:text-display-md font-semibold text-charcoal mb-4">
             Book Your Audit
           </h1>
           <p className="text-body-lg text-charcoal-light mb-12 max-w-xl leading-relaxed">
@@ -54,7 +54,7 @@ export default function BookPage() {
           {/* Service card */}
           <div className="rounded-2xl border border-border bg-white p-8 md:p-10 mb-10">
             <div className="flex items-baseline justify-between mb-8">
-              <h2 className="font-serif text-h2 text-charcoal">
+              <h2 className="text-h2 font-semibold text-charcoal">
                 Formulation Audit &amp; Strategic Review
               </h2>
               <p className="font-serif text-h2 text-rose ml-4 flex-shrink-0">

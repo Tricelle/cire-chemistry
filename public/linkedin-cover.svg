@@ -1,47 +1,129 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.7">
-      <stop offset="0%" stop-color="#3E2723"/>
-      <stop offset="60%" stop-color="#4A3029"/>
-      <stop offset="100%" stop-color="#5D4037"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#F7F2E8"/>
+      <stop offset="100%" stop-color="#EDE5D8"/>
     </linearGradient>
-    <radialGradient id="sealGlow" cx="0.4" cy="0.35" r="0.6">
-      <stop offset="0%" stop-color="#5D4037" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#3E2723" stop-opacity="0"/>
+
+    <radialGradient id="roseGlow" cx="0.55" cy="0.45" r="0.45">
+      <stop offset="0%" stop-color="#C4929B" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#C4929B" stop-opacity="0"/>
     </radialGradient>
+
+    <radialGradient id="warmGlow" cx="0.15" cy="0.8" r="0.35">
+      <stop offset="0%" stop-color="#C4929B" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#C4929B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Beaker liquid fill gradient -->
+    <linearGradient id="liquidFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4929B" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C4929B" stop-opacity="0.18"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background with gradient -->
+  <!-- Cream background -->
   <rect width="1584" height="396" fill="url(#bg)"/>
+  <rect width="1584" height="396" fill="url(#roseGlow)"/>
+  <rect width="1584" height="396" fill="url(#warmGlow)"/>
 
-  <!-- Subtle top accent line -->
-  <rect x="0" y="0" width="1584" height="2" fill="#C4929B" opacity="0.25"/>
+  <!-- Top rose gold bar -->
+  <rect x="0" y="0" width="1584" height="2.5" fill="#C4929B" opacity="0.4"/>
 
-  <!-- Large decorative wax seal - left side, vertically centered -->
-  <g transform="translate(65, 38) scale(5)">
-    <!-- Seal shape -->
-    <path
-      d="M 32 2.5 C 37 2, 42 3.8, 46.5 6 C 51.5 8.5, 55.5 12, 58.5 16.5 C 60.5 20, 62 24.5, 62 29 C 62.2 34, 61.5 38.5, 59.5 42.5 C 57 47, 53.5 51, 49 54 C 44.5 57.2, 40 59.5, 35.5 61 C 31 62, 26 61.5, 21.5 59.5 C 17 57.5, 13 54, 10 49.5 C 7 45, 4.5 40, 3.5 35 C 2.5 30, 2.5 25, 4.5 20.5 C 6.5 16, 9.5 12, 13.5 8.5 C 17.5 5.5, 22 3.5, 27 2.8 C 29.5 2.4, 30.5 2.4, 32 2.5 Z"
-      fill="#C4929B" opacity="0.2"
-    />
-    <!-- CC letters in seal -->
-    <text x="19" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="400" fill="#F5F0E6" opacity="0.35">C</text>
-    <text x="35" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="400" fill="#F5F0E6" opacity="0.35">C</text>
+  <!-- ========== BEAKER - center-left area, large and elegant ========== -->
+  <g transform="translate(580, 30)" stroke="#C4929B" fill="none">
+
+    <!-- Erlenmeyer flask / beaker outline -->
+    <!-- Neck -->
+    <line x1="60" y1="0" x2="60" y2="100" stroke-width="1.8" opacity="0.22"/>
+    <line x1="100" y1="0" x2="100" y2="100" stroke-width="1.8" opacity="0.22"/>
+    <!-- Neck top rim -->
+    <ellipse cx="80" cy="0" rx="22" ry="4" stroke-width="1.8" opacity="0.22"/>
+    <!-- Flask body - widens out -->
+    <line x1="60" y1="100" x2="10" y2="280" stroke-width="1.8" opacity="0.22"/>
+    <line x1="100" y1="100" x2="150" y2="280" stroke-width="1.8" opacity="0.22"/>
+    <!-- Flat bottom -->
+    <line x1="10" y1="280" x2="150" y2="280" stroke-width="1.8" opacity="0.22"/>
+    <!-- Bottom corners slightly rounded -->
+    <path d="M 10 280 Q 10 290, 20 290" stroke-width="1.5" opacity="0.18"/>
+    <path d="M 150 280 Q 150 290, 140 290" stroke-width="1.5" opacity="0.18"/>
+
+    <!-- Liquid inside beaker - rose fill -->
+    <path d="M 38 200 L 10 280 L 150 280 L 122 200 Z" fill="url(#liquidFill)" stroke="none"/>
+    <!-- Liquid surface line with slight meniscus curve -->
+    <path d="M 38 200 Q 80 192, 122 200" stroke-width="1.2" opacity="0.2"/>
+
+    <!-- Bubbles rising from liquid -->
+    <circle cx="65" cy="250" r="4" stroke-width="1" opacity="0.15"/>
+    <circle cx="90" cy="235" r="2.5" stroke-width="0.8" opacity="0.12"/>
+    <circle cx="75" cy="220" r="3" stroke-width="0.8" opacity="0.10"/>
+    <circle cx="100" cy="260" r="2" stroke-width="0.8" opacity="0.10"/>
+    <circle cx="55" cy="185" r="2" stroke-width="0.7" opacity="0.08"/>
+    <circle cx="95" cy="170" r="1.5" stroke-width="0.6" opacity="0.07"/>
+
+    <!-- Steam / vapor wisps from top -->
+    <path d="M 75 -5 Q 70 -20, 78 -30 Q 86 -40, 76 -50" stroke-width="0.8" opacity="0.10"/>
+    <path d="M 85 -5 Q 90 -18, 83 -28 Q 76 -38, 88 -48" stroke-width="0.6" opacity="0.08"/>
+
+    <!-- Measurement marks on side -->
+    <line x1="14" y1="260" x2="24" y2="258" stroke-width="0.6" opacity="0.10"/>
+    <line x1="22" y1="240" x2="30" y2="238" stroke-width="0.6" opacity="0.10"/>
+    <line x1="30" y1="220" x2="38" y2="218" stroke-width="0.6" opacity="0.10"/>
   </g>
 
-  <!-- Brand name -->
-  <text x="500" y="172" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="400" fill="#F5F0E6" letter-spacing="8">CIRE</text>
-  <text x="500" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="400" fill="#F5F0E6" letter-spacing="8">CHEMISTRY</text>
+  <!-- Small round-bottom flask - floating right of beaker -->
+  <g transform="translate(790, 140)" stroke="#C4929B" fill="none">
+    <!-- Neck -->
+    <line x1="18" y1="0" x2="18" y2="40" stroke-width="1.2" opacity="0.15"/>
+    <line x1="32" y1="0" x2="32" y2="40" stroke-width="1.2" opacity="0.15"/>
+    <!-- Neck rim -->
+    <ellipse cx="25" cy="0" rx="8" ry="2.5" stroke-width="1.2" opacity="0.15"/>
+    <!-- Round bottom -->
+    <path d="M 18 40 Q 18 50, 10 60 Q 0 75, 5 90 Q 10 105, 25 110 Q 40 105, 45 90 Q 50 75, 40 60 Q 32 50, 32 40" stroke-width="1.2" opacity="0.15"/>
+    <!-- Small liquid -->
+    <path d="M 12 80 Q 25 75, 38 80 Q 42 90, 38 100 Q 30 108, 25 108 Q 15 108, 12 100 Q 8 90, 12 80 Z" fill="#C4929B" fill-opacity="0.06" stroke="none"/>
+  </g>
 
-  <!-- Rose accent line -->
-  <rect x="502" y="268" width="70" height="2" fill="#C4929B" opacity="0.8"/>
+  <!-- Dropper / pipette - small accent top area -->
+  <g transform="translate(490, 80)" stroke="#C4929B" fill="none">
+    <!-- Pipette tube -->
+    <line x1="8" y1="30" x2="8" y2="120" stroke-width="1" opacity="0.12"/>
+    <line x1="16" y1="30" x2="16" y2="120" stroke-width="1" opacity="0.12"/>
+    <!-- Bulb -->
+    <path d="M 8 30 Q 8 15, 2 10 Q -2 5, 2 0 Q 6 -3, 12 -3 Q 18 -3, 22 0 Q 26 5, 22 10 Q 16 15, 16 30" stroke-width="1" opacity="0.12"/>
+    <!-- Drip -->
+    <ellipse cx="12" cy="128" rx="3" ry="4" stroke-width="0.8" opacity="0.10"/>
+  </g>
+
+  <!-- Scattered molecular dots -->
+  <g fill="#C4929B">
+    <circle cx="470" cy="300" r="2" opacity="0.10"/>
+    <circle cx="500" cy="330" r="1.5" opacity="0.08"/>
+    <circle cx="850" cy="320" r="1.8" opacity="0.08"/>
+    <circle cx="880" cy="290" r="1.2" opacity="0.07"/>
+    <circle cx="760" cy="50" r="1.5" opacity="0.08"/>
+  </g>
+
+  <!-- Thin connecting lines between dots (molecular bonds) -->
+  <g stroke="#C4929B" stroke-width="0.5">
+    <line x1="470" y1="300" x2="500" y2="330" opacity="0.06"/>
+    <line x1="850" y1="320" x2="880" y2="290" opacity="0.05"/>
+  </g>
+
+  <!-- ========== BRAND TEXT - right side ========== -->
+
+  <!-- Brand name -->
+  <text x="1534" y="168" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="400" fill="#3E2723" letter-spacing="2">Cire Chemistry</text>
+
+  <!-- Rose gold underline accent -->
+  <rect x="1434" y="190" width="100" height="2" fill="#C4929B" opacity="0.55" rx="1"/>
 
   <!-- Tagline -->
-  <text x="504" y="306" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#C4929B" letter-spacing="5" font-weight="400">INDEPENDENT COSMETIC FORMULATION LAB</text>
+  <text x="1534" y="230" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="400" letter-spacing="5" fill="#3E2723" opacity="0.4">INDEPENDENT COSMETIC FORMULATION LAB</text>
 
   <!-- Services -->
-  <text x="504" y="348" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#F5F0E6" letter-spacing="3" opacity="0.6">SKINCARE  ·  HAIRCARE  ·  BODY CARE  ·  COSMETICS</text>
+  <text x="1534" y="262" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="3" fill="#C4929B" opacity="0.5">SKINCARE  ·  HAIRCARE  ·  BODY CARE  ·  COSMETICS</text>
 
-  <!-- Subtle bottom accent line -->
-  <rect x="0" y="394" width="1584" height="2" fill="#C4929B" opacity="0.15"/>
+  <!-- Bottom rose gold bar -->
+  <rect x="0" y="393.5" width="1584" height="2.5" fill="#C4929B" opacity="0.3"/>
 </svg>
