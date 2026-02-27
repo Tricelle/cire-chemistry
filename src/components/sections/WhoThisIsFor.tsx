@@ -18,6 +18,21 @@ export function WhoThisIsFor() {
           </h2>
         </RevealOnScroll>
 
+        {/* Animated Tagline */}
+        <div className="mb-12 overflow-hidden">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-2xl md:text-3xl font-medium">
+            <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.2s_forwards] text-charcoal">
+              I build.
+            </span>
+            <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.5s_forwards] text-charcoal">
+              I formulate.
+            </span>
+            <span className="inline-block opacity-0 animate-[slideInUp_0.6s_ease-out_0.8s_forwards] text-charcoal">
+              I solve.
+            </span>
+          </div>
+        </div>
+
         <RevealOnScroll>
           <div className="space-y-6 mb-12">
             <p className="text-body-lg text-charcoal-light leading-relaxed">

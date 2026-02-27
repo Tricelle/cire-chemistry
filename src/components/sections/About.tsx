@@ -46,14 +46,19 @@ export function About() {
 
             <RevealOnScroll>
               <p className="text-body-lg text-charcoal-light leading-relaxed">
-                My work includes treatment butters, corrective bars, targeted
+                My work spans treatment butters, corrective bars, targeted
                 serums, cleansers, and cohesive product line systems. Each
-                formula is developed with structural integrity and delivered
-                with complete documentation. That includes ingredient
-                specifications, processing instructions, safety
-                considerations, and manufacturer-ready technical sheets. Every
-                detail is reviewed for stability, performance, and
-                scalability.
+                formula is built with structural integrity, reviewed for
+                stability and performance, and delivered with complete
+                manufacturer-ready documentation.
+              </p>
+            </RevealOnScroll>
+
+            <RevealOnScroll>
+              <p className="text-body-lg text-charcoal-light leading-relaxed">
+                That includes ingredient specifications, processing
+                instructions, safety considerations, and technical sheets.
+                Every detail is documented for scalability.
               </p>
             </RevealOnScroll>
 
