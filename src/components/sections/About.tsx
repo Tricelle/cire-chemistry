@@ -28,11 +28,8 @@ export function About() {
                 <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-3 leading-tight">
                   Tricelle Gray
                 </h2>
-                <p className="text-body-md text-charcoal-light font-medium mb-1">
-                  Founder & Principal Cosmetic Chemist
-                </p>
-                <p className="text-body-md text-rose-dark font-medium">
-                  Software Engineer
+                <p className="text-body-md text-charcoal-light font-medium">
+                  Founder & Principal Cosmetic Chemist | Software Engineer
                 </p>
               </div>
             </RevealOnScroll>
